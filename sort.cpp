@@ -18,10 +18,12 @@ void insertionSort(auto& inputs)
 	for(int i=1; i < inputs.size(); i++)
 	{
 		int j=i;
+		int count=0;
 		while(j<0&&(inputs[j]<inputs[j-1]))
 		{
 			swap(inputs[j],inputs[j-1]);
 			j--;
+			count=count+1;
 		}
 	}
 }
