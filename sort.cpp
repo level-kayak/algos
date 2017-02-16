@@ -20,7 +20,7 @@ void insertionSort(auto& inputs)
 		int j=i;
 		while(j<0&&(inputs[j]<inputs[j-1]))
 		{
-			swap(inputs[j],inputs[j-1];
+			swap(inputs[j],inputs[j-1]);
 			j--;
 		}
 	}
@@ -30,7 +30,7 @@ int main()
 {
   vector<string> inputs; 
   string search_key, input;
-  int result;
+  
 
    cout<<"Welcome to \"sort it\". We first need some input data."<<endl;
    cout<<"We'll assume the inputs do not have any spaces."<<endl<<endl;
@@ -54,13 +54,13 @@ int main()
  
    insertionSort(inputs);
  
-	for(int i=0;i<=inputs.size();i++)
+	for(int i=1;i<=inputs.size();i++)
 	{
-		cout<<i;
+		cout<<inputs[i];
 	}
 
 	
-   cout<<endl<<"Program \"search it\" is now finished."<<endl<<endl;
+   cout<<endl<<"Program \"sort it\" is now finished."<<endl<<endl;
 
     return 0;
 }
