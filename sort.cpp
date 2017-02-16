@@ -26,6 +26,7 @@ void insertionSort(auto& inputs)
 			count=count+1;
 		}
 	}
+	
 }
 
 int main()
@@ -60,8 +61,7 @@ int main()
 	{
 		cout<<inputs[i];
 	}
-
-	
+	cout<<endl<< "Number of times"<<count;	
    cout<<endl<<"Program \"sort it\" is now finished."<<endl<<endl;
 
     return 0;
